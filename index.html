@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4HDMMRJV6Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-4HDMMRJV6Q');
+</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>安樂探索計畫｜黃舒琳</title>
+  <meta name="description" content="政治素人黃舒琳發起安樂探索計畫，蒐集100種安樂的未來，邀請居民一起把問題、故事與願望變成看得見的地圖。" />
+  <meta property="og:title" content="安樂探索計畫｜黃舒琳" />
+  <meta property="og:description" content="如果十年後的安樂變得更好了，你希望第一個看見什麼改變？" />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --main: #ed6c00;
+      --main-dark: #b85200;
+      --gray-50: #fafafa;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-600: #4b5563;
+      --gray-800: #1f2937;
+      --ink: #171717;
+      --paper: #fffdf8;
+      --radius: 22px;
+      --shadow: 0 18px 45px rgba(0,0,0,.10);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.75;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .wrap { width: min(1120px, calc(100% - 36px)); margin: auto; }
+    .nav {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(12px);
+      background: rgba(255,253,248,.82);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .nav-inner {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 14px 0;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 900; }
+    .dot { width: 14px; height: 14px; border-radius: 99px; background: var(--main); box-shadow: 0 0 0 7px rgba(237,108,0,.12); }
+    .nav-links { display: flex; gap: 16px; color: var(--gray-600); font-size: 14px; }
+    .nav-links a:hover { color: var(--main); }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--main);
+      color: white;
+      font-weight: 800;
+      border: 0;
+      cursor: pointer;
+      box-shadow: 0 10px 24px rgba(237,108,0,.22);
+    }
+    .btn.secondary {
+      background: white;
+      color: var(--main-dark);
+      border: 1px solid rgba(237,108,0,.28);
+      box-shadow: none;
+    }
+
+    .hero {
+      padding: 70px 0 42px;
+      background:
+        radial-gradient(circle at 85% 15%, rgba(237,108,0,.16), transparent 34%),
+        linear-gradient(180deg, #fff7ed 0%, var(--paper) 72%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 36px;
+      align-items: center;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: white;
+      border: 1px solid rgba(237,108,0,.2);
+      color: var(--main-dark);
+      font-weight: 800;
+      font-size: 14px;
+    }
+    h1 {
+      font-size: clamp(38px, 7vw, 74px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin: 18px 0 18px;
+    }
+    .lead {
+      font-size: clamp(18px, 2.4vw, 24px);
+      color: var(--gray-800);
+      max-width: 680px;
+      font-weight: 650;
+    }
+    .sublead { color: var(--gray-600); max-width: 680px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+
+    .card {
+      background: white;
+      border: 1px solid rgba(0,0,0,.06);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .wish-card { padding: 24px; transform: rotate(1deg); }
+    .wish-card h2 { margin: 0 0 8px; font-size: 25px; }
+    .wish-note {
+      background: #fff3e7;
+      border: 2px dashed rgba(237,108,0,.38);
+      border-radius: 18px;
+      padding: 18px;
+      margin: 16px 0;
+      font-size: 21px;
+      font-weight: 800;
+    }
+    .mini-form { display: grid; gap: 10px; margin-top: 14px; }
+    input, textarea, select {
+      width: 100%;
+      border: 1px solid var(--gray-200);
+      border-radius: 14px;
+      padding: 12px 14px;
+      font: inherit;
+      background: white;
+    }
+    textarea { min-height: 92px; resize: vertical; }
+
+    section { padding: 64px 0; }
+    .section-title {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.15;
+      margin: 0 0 14px;
+      letter-spacing: -.5px;
+    }
+    .section-desc { color: var(--gray-600); max-width: 760px; margin: 0 0 28px; }
+
+    .three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .feature { padding: 22px; }
+    .icon {
+      width: 48px; height: 48px; border-radius: 16px;
+      background: #fff0df;
+      display: grid; place-items: center;
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
+    .feature h3, .diary h3 { margin: 0 0 8px; font-size: 22px; }
+    .feature p, .diary p { color: var(--gray-600); margin: 0; }
+
+    .orange-band {
+      background: var(--main);
+      color: white;
+      border-radius: 32px;
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+      align-items: center;
+      box-shadow: 0 18px 50px rgba(237,108,0,.24);
+    }
+    .orange-band h2 { margin: 0 0 10px; font-size: clamp(28px, 4vw, 44px); line-height: 1.12; }
+    .quote-list { display: grid; gap: 12px; }
+    .quote {
+      background: rgba(255,255,255,.16);
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 18px;
+      padding: 14px 16px;
+      font-weight: 750;
+    }
+
+    .diary-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .diary { padding: 22px; position: relative; overflow: hidden; }
+    .tag {
+      display: inline-block;
+      color: var(--main-dark);
+      background: #fff0df;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .timeline { display: grid; gap: 14px; }
+    .event {
+      display: grid;
+      grid-template-columns: 92px 1fr auto;
+      gap: 14px;
+      align-items: center;
+      padding: 18px;
+      background: white;
+      border: 1px solid rgba(0,0,0,.06);
+      border-radius: 20px;
+    }
+    .date {
+      background: var(--gray-100);
+      border-radius: 16px;
+      padding: 10px;
+      text-align: center;
+      font-weight: 900;
+      color: var(--main-dark);
+    }
+    .event h3 { margin: 0; }
+    .event p { margin: 2px 0 0; color: var(--gray-600); }
+
+    .share {
+      text-align: center;
+      background: linear-gradient(180deg, var(--gray-100), #fff);
+      border-radius: 34px;
+      padding: 42px 24px;
+    }
+    .share h2 { font-size: clamp(30px, 5vw, 54px); line-height: 1.12; margin: 0 0 14px; }
+    .share p { color: var(--gray-600); max-width: 680px; margin: auto auto 22px; }
+
+    footer { padding: 36px 0; color: var(--gray-600); border-top: 1px solid rgba(0,0,0,.06); }
+    .footer-grid { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+
+    .pm-note {
+      background: #111827;
+      color: white;
+      border-radius: 24px;
+      padding: 22px;
+      margin-top: 26px;
+      font-size: 14px;
+    }
+    .pm-note code { color: #fed7aa; }
+
+    @media (max-width: 860px) {
+      .hero-grid, .orange-band, .three, .diary-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .event { grid-template-columns: 1fr; }
+      .wish-card { transform: none; }
+      section { padding: 48px 0; }
+    }
+  </style>
+</head>
+<body>
+  <!--
+    PM修改區：
+    1. 改候選人名稱：搜尋「黃舒琳」
+    2. 改主色：修改 :root 的 --main
+    3. 改活動：找到 id="events" 區塊
+    4. 改表單連結：搜尋 YOUR_GOOGLE_FORM_URL
+    5. 改 LINE / Threads / IG 連結：搜尋 YOUR_
+  -->
+
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top"><span class="dot"></span>安樂探索計畫</a>
+      <div class="nav-links">
+        <a href="#why">為什麼開始</a>
+        <a href="#collect">100種未來</a>
+        <a href="#diary">政治素人日誌</a>
+        <a href="#events">近期活動</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">政治素人日誌・從認識安樂開始</span>
+        <h1>如果一場選舉，<br>不是從政見開始？</h1>
+        <p class="lead">黃舒琳想先做一件比較慢、但比較重要的事：走進安樂，聽大家說生活裡真正卡住的地方。</p>
+        <p class="sublead">我們正在蒐集「100種安樂的未來」，把居民的故事、痛點與願望整理成看得見的地圖。年輕有想法，舒琳找辦法。</p>
+        <div class="hero-actions">
+          <a class="btn" href="#wish">留下你的安樂願望</a>
+          <a class="btn secondary" href="#events">看看近期活動</a>
+        </div>
+      </div>
+
+      <div class="card wish-card" id="wish">
+        <h2>給安樂的一張小紙條</h2>
+        <p>如果十年後的安樂變得更好了，你希望第一個看見什麼改變？</p>
+        <div class="wish-note">「希望長輩願意走出家門。」</div>
+        <form class="mini-form" onsubmit="event.preventDefault(); alert('這是示範表單。上線時請改成 Google Form 或後端 API。');">
+          <textarea placeholder="寫下你的安樂願望，例如：希望武崙市場旁邊的人行道更好走"></textarea>
+          <select>
+            <option>你的願望比較像哪一類？</option>
+            <option>交通 / 通勤</option>
+            <option>長照 / 照顧者</option>
+            <option>身障 / 無障礙</option>
+            <option>親子 / 教育</option>
+            <option>青年 / 就業</option>
+            <option>公共空間 / 安全</option>
+          </select>
+          <input placeholder="在哪一里或哪個地點？例：武崙、安樂市場、長庚周邊" />
+          <button class="btn" type="submit">送出願望區製作中</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="why">
+      <div class="wrap">
+        <h2 class="section-title">不是來收集支持者，<br>是先來認識安樂。</h2>
+        <p class="section-desc">有些長輩不會上網，有些照顧者忙到沒時間參加會議，有些身障朋友出門本身就是挑戰。很多重要的生活問題，常常沒有被好好記錄。</p>
+
+        <div class="three">
+          <article class="card feature">
+            <div class="icon">👂</div>
+            <h3>先聽見人</h3>
+            <p>掃街拜票時，不只握手，也留下便條紙與聯絡方式，讓居民可以說出真正的生活痛點。</p>
+          </article>
+          <article class="card feature">
+            <div class="icon">🗺️</div>
+            <h3>再整理問題</h3>
+            <p>把交通、長照、育兒、無障礙、公共空間等意見整理成安樂需求地圖。</p>
+          </article>
+          <article class="card feature">
+            <div class="icon">🧡</div>
+            <h3>一起找辦法</h3>
+            <p>不是每件事都能馬上解決，但每一件事都值得被看見、被追蹤、被回應。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="collect">
+      <div class="wrap">
+        <div class="orange-band">
+          <div>
+            <h2>我們正在蒐集<br>100種安樂的未來</h2>
+            <p>不是只有「希望安樂更好」這種大句子，而是蒐集具體地點、具體故事、具體痛點。</p>
+            <a class="btn secondary" href="YOUR_GOOGLE_FORM_URL" target="_blank" rel="noreferrer">填寫完整表單</a>
+          </div>
+          <div class="quote-list">
+            <div class="quote">🟢 我喜歡的安樂：最有回憶的地方</div>
+            <div class="quote">🔴 我最困擾的事情：每天都卡住的小問題</div>
+            <div class="quote">🔵 我希望十年後的安樂：想留給孩子與長輩的生活</div>
+            <div class="quote">🟡 我願意一起做的事：分享專業、提供建議、協助活動</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="diary">
+      <div class="wrap">
+        <h2 class="section-title">政治素人日誌</h2>
+        <p class="section-desc">舒琳不是地方派系，也不是現任議員。她正在用比較笨、但比較踏實的方法：一個攤位、一條路、一位居民慢慢認識。</p>
+
+        <div class="diary-grid">
+          <article class="card diary">
+            <span class="tag">社福團體博覽會</span>
+            <h3>原來安樂有這麼多人默默在做事</h3>
+            <p>有人陪失智長輩，有人陪身障朋友，有人陪照顧者。以前真的不知道，現在開始補課。</p>
+          </article>
+          <article class="card diary">
+            <span class="tag">掃街便條紙</span>
+            <h3>今天蒐集到的第一個安樂願望</h3>
+            <p>「希望長輩願意走出家門。」比起蓋什麼建設，這句話反而讓我們想很久。</p>
+          </article>
+          <article class="card diary">
+            <span class="tag">琳琳後議員看政策</span>
+            <h3>政策不是憑空想出來的</h3>
+            <p>先知道大家在哪裡痛，才知道政策應該從哪裡開始。</p>
+          </article>
+          <article class="card diary">
+            <span class="tag">藍綠白之外</span>
+            <h3>給年輕人一個機會，也給地方一種新做法</h3>
+            <p>少一點口號，多一點紀錄；少一點表演，多一點回到生活現場。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="events">
+      <div class="wrap">
+        <h2 class="section-title">近期活動</h2>
+        <p class="section-desc">活動不是造勢，是讓大家用比較低壓的方式參與安樂。I 人也可以只寫紙條、不上台、不被點名。</p>
+
+        <div class="timeline">
+          <article class="event">
+            <div class="date">6/28 14:00-17:00<br>預計</div>
+            <div>
+              <h3>設計你的安樂工作坊</h3>
+              <p>用地圖、便條紙、照片與小組討論，一起想像十年後的安樂。</p>
+            </div>
+            <a class="btn secondary" href="https://line.me/ti/g/hdFtd_BGCX">了解活動</a>
+          </article>
+
+          <article class="event">
+            <div class="date">7月<br>預計</div>
+            <div>
+              <h3>長輩手機使用教學</h3>
+              <p>LINE、google map、防詐騙、健保快易通，讓數位生活少一點卡關。</p>
+            </div>
+            <a class="btn secondary" href="https://line.me/ti/g/hdFtd_BGCX">我想參加</a>
+          </article>
+
+          <article class="event">
+            <div class="date">端午節連假<br>預計</div>
+            <div>
+              <h3>彩繪石頭尋寶</h3>
+              <p>把祝福與願望藏進社區，利用<a href="https://www.facebook.com/groups/959474668404083/">小拾頭社團</a>模式，</p>
+              <p>讓孩子、家庭與長輩重新認識安樂。</p>
+            </div>
+            <a class="btn secondary" href="https://line.me/ti/g/hdFtd_BGCX">追蹤消息</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap share">
+        <h2>年輕有想法，<br>舒琳找辦法。</h2>
+        <p>如果你也覺得，安樂需要一個真正看見人、傾聽問題、把安樂放在心上的新選擇，歡迎把這個頁面傳給一位住在安樂的朋友。</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn" href="#wish">留下你的想法</a>
+          <a class="btn secondary" href="https://www.facebook.com/profile.php?id=61590712648404" target="_blank" rel="noreferrer">持續關注我們</a>
+        </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div>
+        <strong>黃舒琳｜安樂探索計畫發起人</strong><br>
+        做真正看見人、傾聽問題、把安樂放在心上的存在。
+      </div>
+      <div>
+        <a href="https://www.threads.com/@shu01yuan">Threads</a> ・
+        <a href="https://www.instagram.com/shu01yuan/">Instagram</a> ・
+        <a href="https://line.me/R/ti/p/@591vrqjv">LINE</a><br>
+        <a href="https://share.google/ZP1g1ZUEosPvnZ8qF">基隆市安樂區樂一路12巷62號</a><br>
+        <a>office@anle.tw</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
